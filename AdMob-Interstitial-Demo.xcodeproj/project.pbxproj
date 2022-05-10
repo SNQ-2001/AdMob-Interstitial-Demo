@@ -64,7 +64,7 @@
 				1CA90CFE282A3AFE00E8B742 /* Info.plist */,
 				1CA90CEE282A389800E8B742 /* AdMob_Interstitial_DemoApp.swift */,
 				1CA90CF0282A389800E8B742 /* ContentView.swift */,
-				1CA90CFC282A38D200E8B742 /* Interstitial.swift */,
+				1CA90CFF282A400200E8B742 /* AdMob */,
 				1CA90CF2282A389900E8B742 /* Assets.xcassets */,
 				1CA90CF4282A389900E8B742 /* Preview Content */,
 			);
@@ -77,6 +77,14 @@
 				1CA90CF5282A389900E8B742 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CA90CFF282A400200E8B742 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				1CA90CFC282A38D200E8B742 /* Interstitial.swift */,
+			);
+			path = AdMob;
 			sourceTree = "<group>";
 		};
 		438BF3D49887365B9645D0AB /* Frameworks */ = {
