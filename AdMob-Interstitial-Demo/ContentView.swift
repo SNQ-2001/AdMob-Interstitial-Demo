@@ -2,20 +2,19 @@
 //  ContentView.swift
 //  AdMob-Interstitial-Demo
 //
-//  Created by 宮本大新 on 2022/05/10.
+//  Created by TAISHIN MIYAMOTO on 2022/05/10.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var interstitial = Interstitial()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        Button(action: {
+            interstitial.ShowInterstitial()
+        }) {
+            Text(interstitial.interstitialAdLoaded ? "インタースティシャル広告表示" : "読み込み中...")
+        }
+        .disabled(!interstitial.interstitialAdLoaded)
     }
 }
