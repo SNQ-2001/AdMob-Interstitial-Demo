@@ -1,4 +1,6 @@
 # AdMob-Interstitial-Demo
+https://qiita.com/SNQ-2001/items/5590a55324c39582a9ef
+
 ## Official Documents
 [Get Started](https://developers.google.com/admob/ios/quick-start)
 
