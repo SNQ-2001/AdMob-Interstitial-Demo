@@ -13,7 +13,6 @@ class Interstitial: NSObject, GADFullScreenContentDelegate, ObservableObject {
 
     override init() {
         super.init()
-        LoadInterstitial()
     }
 
     // リワード広告の読み込み
@@ -60,6 +59,5 @@ class Interstitial: NSObject, GADFullScreenContentDelegate, ObservableObject {
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("インタースティシャル広告を閉じました")
         self.interstitialAdLoaded = false
-        self.LoadInterstitial()
     }
 }

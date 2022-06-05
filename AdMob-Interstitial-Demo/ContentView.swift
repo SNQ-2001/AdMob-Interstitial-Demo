@@ -15,6 +15,9 @@ struct ContentView: View {
         }) {
             Text(interstitial.interstitialAdLoaded ? "インタースティシャル広告表示" : "読み込み中...")
         }
+        .onAppear() {
+            interstitial.LoadInterstitial()
+        }
         .disabled(!interstitial.interstitialAdLoaded)
     }
 }
